@@ -1,0 +1,32 @@
+Performing C SOURCE FILE Test HAVE___DECLSPEC_DLLEXPORT_ failed with the following output:
+Change Dir: /Users/Maxio96/lzrr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6ad11/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6ad11.dir/build.make CMakeFiles/cmTC_6ad11.dir/build
+Building C object CMakeFiles/cmTC_6ad11.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DHAVE___DECLSPEC_DLLEXPORT_  -Wall  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -MD -MT CMakeFiles/cmTC_6ad11.dir/src.c.o -MF CMakeFiles/cmTC_6ad11.dir/src.c.o.d -o CMakeFiles/cmTC_6ad11.dir/src.c.o -c /Users/Maxio96/lzrr/build/CMakeFiles/CMakeTmp/src.c
+/Users/Maxio96/lzrr/build/CMakeFiles/CMakeTmp/src.c:1:1: error: '__declspec' attributes are not enabled; use '-fdeclspec' or '-fms-extensions' to enable support for __declspec attributes
+__declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
+^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_6ad11.dir/src.c.o] Error 1
+make: *** [cmTC_6ad11/fast] Error 2
+
+
+Source file was:
+__declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
+Performing C SOURCE FILE Test HAVE___DECLSPEC_DLLIMPORT_ failed with the following output:
+Change Dir: /Users/Maxio96/lzrr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ad804/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ad804.dir/build.make CMakeFiles/cmTC_ad804.dir/build
+Building C object CMakeFiles/cmTC_ad804.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DHAVE___DECLSPEC_DLLIMPORT_  -Wall  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -MD -MT CMakeFiles/cmTC_ad804.dir/src.c.o -MF CMakeFiles/cmTC_ad804.dir/src.c.o.d -o CMakeFiles/cmTC_ad804.dir/src.c.o -c /Users/Maxio96/lzrr/build/CMakeFiles/CMakeTmp/src.c
+/Users/Maxio96/lzrr/build/CMakeFiles/CMakeTmp/src.c:1:1: error: '__declspec' attributes are not enabled; use '-fdeclspec' or '-fms-extensions' to enable support for __declspec attributes
+__declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
+^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_ad804.dir/src.c.o] Error 1
+make: *** [cmTC_ad804/fast] Error 2
+
+
+Source file was:
+__declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
