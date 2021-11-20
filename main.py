@@ -1,5 +1,5 @@
 import os
-from module.parse import parseInput
+from module.parse import parse_input
 
 pwd = os.getcwd()
-parseInput(pwd)
+parse_input(pwd)
