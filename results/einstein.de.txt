@@ -1,0 +1,14 @@
+Loading : /Users/Maxio96/Desktop/lzrr/input/einstein.de.txt
+constructing Suffix Array...[END]
+Constructing LCP Array[END]
+Initializing the dependency array manager...[END]
+compressing text.. : [0/92758441]compressing text.. : [34771421/92758441]compressing text.. : [92686193/92758441]compressing text.. : [92748591/92758441]
+[36m=============RESULT===============
+File : /Users/Maxio96/Desktop/lzrr/input/einstein.de.txt
+Output : /Users/Maxio96/Desktop/lzrr/output/einstein.de.txt.lzrr
+Mode : lzrr
+The length of the input text : 92758441
+The number of factors : 31810
+Excecution time : 114549ms[809.771chars/ms]
+==================================
+[39m

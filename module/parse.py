@@ -12,7 +12,7 @@ def parse_input(root_path="", method="lzrr"):
             print(f"Compressing {filename}")
             output_pile_path = f"{output_path}{filename}.{method}"
             input_file_path = f"{input_path}{filename}"
-            result_file_path = f"{result_path}{filename}.txt"
+            result_file_path = f"{result_path}{filename}"
             os.system(build_command(input_file_path, output_pile_path, method, result_file_path))
             print(f"{filename} compressed")
     print("Compression has ended")
