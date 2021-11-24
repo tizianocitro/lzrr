@@ -1,7 +1,7 @@
 import os
 
 
-def parse_input(root_path="", method="lzrr"):
+def compress(root_path="", method="lzrr"):
     input_path = f"{root_path}/input/"
     output_path = f"{root_path}/output/"
     result_path = f"{root_path}/results/"
