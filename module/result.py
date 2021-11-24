@@ -18,15 +18,16 @@ def get_file_list(root_path=""):
 
 
 def get_file_stats(root_path="", filename=""):
-    lines = get_file_lines(root_path, filename)
+    lines = get_reversed_file_lines(root_path, filename)
     exec_time = get_execution_time(lines[2])
-    n_factor = get_n_factor(lines[3])
-    input_len = get_input_len(lines[4])
-    result_tuple = (filename, exec_time, n_factor, input_len)
+    memory = get_memory(lines[3])
+    n_factor = get_n_factor(lines[4])
+    input_len = get_input_len(lines[5])
+    result_tuple = (filename, exec_time, n_factor, input_len, memory)
     return result_tuple
 
 
-def get_file_lines(root_path="", filename=""):
+def get_reversed_file_lines(root_path="", filename=""):
     file = open(f'{root_path}/results/{filename}')
     lines = file.readlines()
     lines.reverse()
@@ -34,12 +35,20 @@ def get_file_lines(root_path="", filename=""):
 
 
 def get_execution_time(exec_time_str=""):
-    return round(int(exec_time_str.split(":")[1].split("ms")[0])/1000)
+    return round(int(split_by_comma(exec_time_str).split("ms")[0])/1000)
+
+
+def get_memory(memory_str=""):
+    return round(round(int(split_by_comma(memory_str))/1000)/1000)
 
 
 def get_n_factor(n_factor_str=""):
-    return int(n_factor_str.split(":")[1].split("\n")[0])
+    return int(split_by_comma(n_factor_str).split("\n")[0])
 
 
 def get_input_len(input_len_str=""):
-    return int(input_len_str.split(":")[1].split("\n")[0])
+    return int(split_by_comma(input_len_str).split("\n")[0])
+
+
+def split_by_comma(string=""):
+    return string.split(":")[1]
