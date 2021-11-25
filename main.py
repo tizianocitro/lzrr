@@ -1,15 +1,13 @@
 import os
-from module.compress import compress
-from module.result import *
+import matplotlib.pyplot as plt
 
+from module.compress import compress_all
+from module.stats import get_all_stats
+from module.plots import bar
+from module.plots import from_stats_to_bar
 cwd = os.getcwd()
-compress(cwd)
-compress(cwd, "lex")
-compress(cwd, "lz")
+#compress_all(cwd)
 
-lzrr_results = get_stats(cwd)
-print(f"Results for LZRR: {lzrr_results}")
-lz_results = get_stats(cwd, "lz")
-print(f"Results for LZ77: {lz_results}")
-lex_results = get_stats(cwd, "lex")
-print(f"Results for LEX: {lex_results}")
+stats=get_all_stats(cwd)
+from_stats_to_bar(stats,"execution time (s)")
+#bar(y=[stats['lzrr'][0][1],stats['lz'][0][1],stats['lex'][0][1]],y_label="execution time (s)",title=title)

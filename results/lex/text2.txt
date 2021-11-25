@@ -1,12 +1,12 @@
-Loading : /Users/tizianocitro/PyCharm/lzrr/input/text2.txt
+Loading : /Users/Maxio96/Desktop/lzrr/input/text2.txt
 constructing Suffix Array...[END]
 [36m=============RESULT===============
-File : /Users/tizianocitro/PyCharm/lzrr/input/text2.txt
-Output : /Users/tizianocitro/PyCharm/lzrr/output/lex/text2.txt.lex
+File : /Users/Maxio96/Desktop/lzrr/input/text2.txt
+Output : /Users/Maxio96/Desktop/lzrr/output/lex/text2.txt.lex
 Mode : lex
 The length of the input text : 250
 The number of factors : 73
-Memory : 1589248
-Excecution time : 0ms[infchars/ms]
+Memory : 1572864
+Excecution time : 1ms[250chars/ms]
 ==================================
 [39m

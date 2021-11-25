@@ -1,6 +1,16 @@
 import os
 
+def get_all_stats(root_path=""):
 
+    lzrr_results = get_stats(root_path)
+    lz_results   = get_stats(root_path, "lz")
+    lex_results  = get_stats(root_path, "lex")
+    stats={
+        "lzrr": lzrr_results,
+        "lz"  : lz_results,
+        "lex" : lex_results
+        }
+    return stats
 def get_stats(root_path="", method="lzrr"):
     filenames = get_file_list(root_path, method)
     stats = []

@@ -1,15 +1,15 @@
-Loading : /Users/tizianocitro/PyCharm/lzrr/input/einstein.de.txt
+Loading : /Users/Maxio96/Desktop/lzrr/input/einstein.de.txt
 constructing Suffix Array...[END]
 Constructing LCP Array[END]
 Initializing the dependency array manager...[END]
 compressing text.. : [0/92758441]compressing text.. : [34771421/92758441]compressing text.. : [92686193/92758441]compressing text.. : [92748591/92758441]
 [36m=============RESULT===============
-File : /Users/tizianocitro/PyCharm/lzrr/input/einstein.de.txt
-Output : /Users/tizianocitro/PyCharm/lzrr/output/lzrr/einstein.de.txt.lzrr
+File : /Users/Maxio96/Desktop/lzrr/input/einstein.de.txt
+Output : /Users/Maxio96/Desktop/lzrr/output/lzrr/einstein.de.txt.lzrr
 Mode : lzrr
 The length of the input text : 92758441
 The number of factors : 31810
-Memory : 190173184
-Excecution time : 76768ms[1208.3chars/ms]
+Memory : 145600512
+Excecution time : 121638ms[762.578chars/ms]
 ==================================
 [39m
