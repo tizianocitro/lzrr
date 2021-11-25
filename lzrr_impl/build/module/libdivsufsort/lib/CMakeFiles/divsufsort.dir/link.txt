@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libdivsufsort.a CMakeFiles/divsufsort.dir/divsufsort.o CMakeFiles/divsufsort.dir/sssort.o CMakeFiles/divsufsort.dir/trsort.o CMakeFiles/divsufsort.dir/utils.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libdivsufsort.a
