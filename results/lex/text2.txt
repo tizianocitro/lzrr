@@ -1,14 +1,12 @@
 Loading : /Users/tizianocitro/PyCharm/lzrr/input/text2.txt
 constructing Suffix Array...[END]
-Initializing the dependency array manager...[END]
-compressing text.. : [0/250]
 [36m=============RESULT===============
 File : /Users/tizianocitro/PyCharm/lzrr/input/text2.txt
-Output : /Users/tizianocitro/PyCharm/lzrr/output/text2.txt.lzrr
-Mode : lzrr
+Output : /Users/tizianocitro/PyCharm/lzrr/output/lex/text2.txt.lex
+Mode : lex
 The length of the input text : 250
-The number of factors : 70
-Memory : 1646592
+The number of factors : 73
+Memory : 1589248
 Excecution time : 0ms[infchars/ms]
 ==================================
 [39m

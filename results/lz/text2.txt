@@ -1,0 +1,13 @@
+Loading : /Users/tizianocitro/PyCharm/lzrr/input/text2.txt
+constructing LPFUD...[END]
+Computing factors...[END]
+[36m=============RESULT===============
+File : /Users/tizianocitro/PyCharm/lzrr/input/text2.txt
+Output : /Users/tizianocitro/PyCharm/lzrr/output/lz/text2.txt.lz
+Mode : lz
+The length of the input text : 250
+The number of factors : 81
+Memory : 1601536
+Excecution time : 0ms[infchars/ms]
+==================================
+[39m
