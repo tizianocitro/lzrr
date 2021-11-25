@@ -1,6 +1,12 @@
 import os
 
 
+def compress_all(root_path=""):
+    compress(root_path)
+    compress(root_path, "lex")
+    compress(root_path, "lz")
+
+
 def compress(root_path="", method="lzrr"):
     input_path = f"{root_path}/input/"
     output_path = f"{root_path}/output/{method}/"
@@ -20,10 +26,5 @@ def compress(root_path="", method="lzrr"):
 
 def build_command(input_file_path="", output_pile_path="", method="lzrr", result_file_path=""):
     if input_file_path != "" and output_pile_path != "" and result_file_path != "":
-        command = f"./lzrr_impl/build/compress.out -i {input_file_path} -m {method} -o {output_pile_path} > {result_file_path}"
+        command = f"./lzrr_impl/build/compress.out -i {input_file_path} -m {method} -o {output_pile_path}  -c 1 > {result_file_path}"
         return command
-
-def compress_all(root_path=""):
-    compress(root_path)
-    compress(root_path, "lex")
-    compress(root_path, "lz")

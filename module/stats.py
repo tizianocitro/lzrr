@@ -1,16 +1,18 @@
 import os
 
-def get_all_stats(root_path=""):
 
+def get_all_stats(root_path=""):
     lzrr_results = get_stats(root_path)
-    lz_results   = get_stats(root_path, "lz")
-    lex_results  = get_stats(root_path, "lex")
-    stats={
+    lz_results = get_stats(root_path, "lz")
+    lex_results = get_stats(root_path, "lex")
+    stats = {
         "lzrr": lzrr_results,
-        "lz"  : lz_results,
-        "lex" : lex_results
-        }
+        "lz": lz_results,
+        "lex": lex_results
+    }
     return stats
+
+
 def get_stats(root_path="", method="lzrr"):
     filenames = get_file_list(root_path, method)
     stats = []
@@ -49,7 +51,7 @@ def get_execution_time(exec_time_str=""):
 
 
 def get_memory(memory_str=""):
-    return round(round(int(split_by_colon(memory_str)) / 1000) / 1000)
+    return round(int(split_by_colon(memory_str)) / 100000)
 
 
 def get_n_factor(n_factor_str=""):
