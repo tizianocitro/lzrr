@@ -44,5 +44,5 @@ def plot_all(stats={}):
     from_stats_to_bar(stats,metric="execution time (s)")
     from_stats_to_bar(stats,metric="number of factor")
     from_stats_to_bar(stats,metric="input length")
-    from_stats_to_bar(stats,metric="memory (MB)")
+    from_stats_to_bar(stats,metric="memory conumption (MB)")
     print("All plots have been generated")
