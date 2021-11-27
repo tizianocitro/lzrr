@@ -1,15 +1,15 @@
-Loading : /Users/tizianocitro/PyCharm/lzrr/input/text1.txt
+Loading : /home/maxio96/Scrivania/lzrr/input/text1.txt
 constructing Suffix Array...[END]
  Constructing Dependency Array : [1/37]
  Decompressing the compressed text : [0/37]
 text check : OK!
 [36m=============RESULT===============
-File : /Users/tizianocitro/PyCharm/lzrr/input/text1.txt
-Output : /Users/tizianocitro/PyCharm/lzrr/output/lex/text1.txt.lex
+File : /home/maxio96/Scrivania/lzrr/input/text1.txt
+Output : /home/maxio96/Scrivania/lzrr/output/lex/text1.txt.lex
 Mode : lex
 The length of the input text : 37
 The number of factors : 10
-Memory : 1630208
-Excecution time : 0ms[infchars/ms]
+Memory : 4421787648
+Excecution time : 1ms[37chars/ms]
 ==================================
 [39m

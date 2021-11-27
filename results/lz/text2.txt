@@ -1,14 +1,14 @@
-Loading : /Users/tizianocitro/PyCharm/lzrr/input/text2.txt
+Loading : /home/maxio96/Scrivania/lzrr/input/text2.txt
 constructing LPFUD...[END]
 Computing factors...[END]
 text check : OK!
 [36m=============RESULT===============
-File : /Users/tizianocitro/PyCharm/lzrr/input/text2.txt
-Output : /Users/tizianocitro/PyCharm/lzrr/output/lz/text2.txt.lz
+File : /home/maxio96/Scrivania/lzrr/input/text2.txt
+Output : /home/maxio96/Scrivania/lzrr/output/lz/text2.txt.lz
 Mode : lz
 The length of the input text : 250
 The number of factors : 81
-Memory : 1622016
-Excecution time : 0ms[infchars/ms]
+Memory : 4420997120
+Excecution time : 1ms[250chars/ms]
 ==================================
 [39m

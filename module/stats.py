@@ -51,7 +51,7 @@ def get_execution_time(exec_time_str=""):
 
 
 def get_memory(memory_str=""):
-    return round(int(split_by_colon(memory_str)) / 100000)
+    return round(int(split_by_colon(memory_str)) / 1000000)
 
 
 def get_n_factor(n_factor_str=""):

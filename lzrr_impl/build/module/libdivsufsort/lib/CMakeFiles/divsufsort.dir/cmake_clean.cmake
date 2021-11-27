@@ -1,12 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/divsufsort.dir/divsufsort.o"
-  "CMakeFiles/divsufsort.dir/divsufsort.o.d"
   "CMakeFiles/divsufsort.dir/sssort.o"
-  "CMakeFiles/divsufsort.dir/sssort.o.d"
   "CMakeFiles/divsufsort.dir/trsort.o"
-  "CMakeFiles/divsufsort.dir/trsort.o.d"
   "CMakeFiles/divsufsort.dir/utils.o"
-  "CMakeFiles/divsufsort.dir/utils.o.d"
   "libdivsufsort.a"
   "libdivsufsort.pdb"
 )

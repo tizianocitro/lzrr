@@ -1,17 +1,33 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/maxio96/Scrivania/lzrr/lzrr_impl/module/libdivsufsort/lib/divsufsort.c" "/home/maxio96/Scrivania/lzrr/lzrr_impl/build/module/libdivsufsort/lib/CMakeFiles/divsufsort.dir/divsufsort.o"
+  "/home/maxio96/Scrivania/lzrr/lzrr_impl/module/libdivsufsort/lib/sssort.c" "/home/maxio96/Scrivania/lzrr/lzrr_impl/build/module/libdivsufsort/lib/CMakeFiles/divsufsort.dir/sssort.o"
+  "/home/maxio96/Scrivania/lzrr/lzrr_impl/module/libdivsufsort/lib/trsort.c" "/home/maxio96/Scrivania/lzrr/lzrr_impl/build/module/libdivsufsort/lib/CMakeFiles/divsufsort.dir/trsort.o"
+  "/home/maxio96/Scrivania/lzrr/lzrr_impl/module/libdivsufsort/lib/utils.c" "/home/maxio96/Scrivania/lzrr/lzrr_impl/build/module/libdivsufsort/lib/CMakeFiles/divsufsort.dir/utils.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "HAVE_CONFIG_H=1"
+  "__STDC_CONSTANT_MACROS"
+  "__STDC_FORMAT_MACROS"
+  "__STDC_LIMIT_MACROS"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/tizianocitro/PyCharm/lzrr/lzrr_impl/module/libdivsufsort/lib/divsufsort.c" "module/libdivsufsort/lib/CMakeFiles/divsufsort.dir/divsufsort.o" "gcc" "module/libdivsufsort/lib/CMakeFiles/divsufsort.dir/divsufsort.o.d"
-  "/Users/tizianocitro/PyCharm/lzrr/lzrr_impl/module/libdivsufsort/lib/sssort.c" "module/libdivsufsort/lib/CMakeFiles/divsufsort.dir/sssort.o" "gcc" "module/libdivsufsort/lib/CMakeFiles/divsufsort.dir/sssort.o.d"
-  "/Users/tizianocitro/PyCharm/lzrr/lzrr_impl/module/libdivsufsort/lib/trsort.c" "module/libdivsufsort/lib/CMakeFiles/divsufsort.dir/trsort.o" "gcc" "module/libdivsufsort/lib/CMakeFiles/divsufsort.dir/trsort.o.d"
-  "/Users/tizianocitro/PyCharm/lzrr/lzrr_impl/module/libdivsufsort/lib/utils.c" "module/libdivsufsort/lib/CMakeFiles/divsufsort.dir/utils.o" "gcc" "module/libdivsufsort/lib/CMakeFiles/divsufsort.dir/utils.o.d"
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../src"
+  "../src/common"
+  "../src/debug"
+  "../src/parse"
+  ".././include"
+  "../module/libdivsufsort/lib/../include"
+  "module/libdivsufsort/lib/../include"
   )
 
 # Targets to which this target links.

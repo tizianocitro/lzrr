@@ -1,8 +1,8 @@
-IF(NOT EXISTS "/Users/tizianocitro/PyCharm/lzrr/lzrr_impl/build/module/libdivsufsort/install_manifest.txt")
-  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/Users/tizianocitro/PyCharm/lzrr/lzrr_impl/build/module/libdivsufsort/install_manifest.txt\"")
-ENDIF(NOT EXISTS "/Users/tizianocitro/PyCharm/lzrr/lzrr_impl/build/module/libdivsufsort/install_manifest.txt")
+IF(NOT EXISTS "/home/maxio96/Scrivania/lzrr/lzrr_impl/build/module/libdivsufsort/install_manifest.txt")
+  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/home/maxio96/Scrivania/lzrr/lzrr_impl/build/module/libdivsufsort/install_manifest.txt\"")
+ENDIF(NOT EXISTS "/home/maxio96/Scrivania/lzrr/lzrr_impl/build/module/libdivsufsort/install_manifest.txt")
 
-FILE(READ "/Users/tizianocitro/PyCharm/lzrr/lzrr_impl/build/module/libdivsufsort/install_manifest.txt" files)
+FILE(READ "/home/maxio96/Scrivania/lzrr/lzrr_impl/build/module/libdivsufsort/install_manifest.txt" files)
 STRING(REGEX REPLACE "\n" ";" files "${files}")
 
 SET(NUM 0)
@@ -22,7 +22,7 @@ FOREACH(file ${files})
   IF(${UNINSTALL_CHECK_${NUM}})
     MESSAGE(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")
     EXEC_PROGRAM(
-      "/usr/local/Cellar/cmake/3.22.0/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
+      "/usr/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
       OUTPUT_VARIABLE rm_out
       RETURN_VALUE rm_retval
       )
@@ -33,4 +33,4 @@ FOREACH(file ${files})
   MATH(EXPR NUM "1 + ${NUM}")
 ENDFOREACH(file)
 
-FILE(REMOVE "/Users/tizianocitro/PyCharm/lzrr/lzrr_impl/build/module/libdivsufsort/install_manifest.txt")
+FILE(REMOVE "/home/maxio96/Scrivania/lzrr/lzrr_impl/build/module/libdivsufsort/install_manifest.txt")
