@@ -1,13 +1,14 @@
 import matplotlib.pyplot as plt
 import os
 
-def bar(x=['lzrr', 'lz', 'lex'], y=[], x_label="methods", y_label="", title="", color="blue",filename=""):
+
+def bar(x=['lzrr', 'lz', 'lex'], y=[], x_label="methods", y_label="", title="", color="blue", filename=""):
     plt.bar(x, y, color=color)
     plt.xlabel(x_label)
     plt.ylabel(y_label)
     plt.title(title)
     title = title.replace(" ", "_")
-    directory=f'./plots/{filename}/'
+    directory = f'./plots/{filename}/'
     if not os.path.exists(directory):
         os.makedirs(directory)
     plt.savefig(f'{directory}{title}.png')
@@ -32,27 +33,27 @@ def get_metric_position_and_color(metric=""):
 
     return position, color
 
-def from_stats_to_plot(stats={},metric=""):
+
+def from_stats_to_plot(stats={}, metric=""):
     position, color = get_metric_position_and_color(metric)
 
     for key in stats.keys():
-        y=[]
-        x=[]
+        y = []
+        x = []
         for tuple in stats[key]:
             y.append(tuple[0])
             x.append(tuple[position])
-        
-        
-        if key=="lz":
-            method=key+'77'.upper()
+
+        if key == "lz":
+            method = key + '77'.upper()
         else:
-            method=key.upper()
+            method = key.upper()
 
-        plot(x,y,y_label=metric,title=method,color=color,method=key)
+        plot(x, y, y_label=metric, title=method, color=color, method=key)
 
 
-def plot (x=[],y=[],x_label="files",y_label="",title="",color="",method=""):
-    plt.plot(y,x,color=color)
+def plot(x=[], y=[], x_label="files", y_label="", title="", color="", method=""):
+    plt.plot(y, x, color=color)
     plt.xlabel(x_label)
     plt.ylabel(y_label)
     plt.suptitle(title)
@@ -61,15 +62,14 @@ def plot (x=[],y=[],x_label="files",y_label="",title="",color="",method=""):
     plt.close()
 
 
-
 def from_stats_to_bar(stats={}, metric=""):
     position, color = get_metric_position_and_color(metric)
     for index in range(len(stats['lzrr'])):
         y = [stats['lzrr'][index][position], stats['lz'][index][position], stats['lex'][index][position]]
-        print("For metric ", metric, " y is ", y)
-        filename=stats['lzrr'][index][0]
+        filename = stats['lzrr'][index][0]
         title = f'{filename} {metric}'
-        bar(y=y, y_label=metric, title=title, color=color,filename=filename)
+        bar(y=y, y_label=metric, title=title, color=color, filename=filename)
+
 
 def plot_all(stats={}):
     print("Generating bars")
