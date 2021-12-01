@@ -5,9 +5,11 @@ from module.plots import get_metric_position_and_color
 
 
 def create_all_tables(stats={}):
+    print("Generating tables")
     create_table(stats)
     create_table(stats, "execution time")
     create_table(stats, "memory consumption")
+    print("All tables have been generated")
 
 
 def create_table(stats={}, metric="number of factor"):
