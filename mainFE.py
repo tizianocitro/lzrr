@@ -219,30 +219,21 @@ class CompressionGui(MDApp):
         self.txtFileList: []
 
     def goToImageSlider(self):
-        q = queue.Queue()
-        threads = [threading.Thread(target=self.func, args=(i, q)) for i in range(5)]
-        for th in threads:
-            th.daemon = True
-            th.start()
+        self.dialog.open()
 
-        result1 = q.get()
-        result2 = q.get()
-
-        print("Second result: {}".format(result2))
-
-
-        # main(self.compressPath)
-        #
-        # resultsFileCompressed = listdir('plots');
-        # for i in resultsFileCompressed:
-        #     self.root.get_screen('imageSlider').ids.box.add_widget(
-        #         MDExpansionPanel(
-        #             content=Content(join('plots', i)),
-        #             panel_cls=MDExpansionPanelOneLine(
-        #                 text=f"{i}",
-        #             )
-        #         )
-        #     )
+        main(self.compressPath)
+        
+        resultsFileCompressed = listdir('plots');
+        for i in resultsFileCompressed:
+            self.root.get_screen('imageSlider').ids.box.add_widget(
+                MDExpansionPanel(
+                    content=Content(join('plots', i)),
+                    panel_cls=MDExpansionPanelOneLine(
+                        text=f"{i}",
+                    )
+                )
+            )
+        self.dialog.dismiss()
         self.root.current = 'imageSlider'
 
     def create_dialog(self):
