@@ -4,16 +4,19 @@ import pathlib
 from PIL.ImageWin import Window
 from kivy.lang import Builder
 from kivy.metrics import dp
+from kivy.uix.floatlayout import FloatLayout
 from kivymd.app import MDApp
 from kivymd.theming import ThemableBehavior
 from kivymd.uix.boxlayout import MDBoxLayout
-from kivymd.uix.button import MDRoundFlatIconButton, MDRectangleFlatButton, MDRaisedButton
+from kivymd.uix.button import MDRoundFlatIconButton, MDRectangleFlatButton, MDRaisedButton, MDFlatButton
 from kivymd.uix.datatables import MDDataTable
+from kivymd.uix.dialog import MDDialog
 from kivymd.uix.expansionpanel import MDExpansionPanel, MDExpansionPanelThreeLine, MDExpansionPanelOneLine
 from kivymd.uix.filemanager import MDFileManager
 from kivymd.uix.fitimage import FitImage
 from kivymd.uix.fitimage import FitImage
 from kivymd.uix.label import MDLabel
+from kivymd.uix.spinner import MDSpinner
 from kivymd.uix.swiper import MDSwiper, MDSwiperItem
 
 from constants import costants
@@ -29,6 +32,8 @@ from kivymd.uix.behaviors import RoundedRectangularElevationBehavior, HoverBehav
 from kivymd.uix.card import MDCard
 
 from constants.costants import convert_size
+import queue    # For Python 2.x use 'import Queue as queue'
+import threading, time, random
 
 Window.size=(600,600)
 _fixed_size = (600,600) #desired fix size
@@ -63,6 +68,8 @@ class FileInfoScreen(MDScreen):
             row_data=row_data,
             elevation=10,
         )
+        self.app.dialog.dismiss()
+
         self.ids.table_layout.add_widget(self.data_tables)
     pass
     def on_leave(self, *args):
@@ -92,6 +99,8 @@ class MD3Card(MDCard, RoundedRectangularElevationBehavior, ThemableBehavior, Hov
         Window.unbind(on_dropfile=self._on_file_drop)
     def _on_file_drop(self, window, file_path):
         if not isfile(file_path):
+            self.app.dialog.open()
+            self.app.compressPath = file_path
             txtFileList = [FileInfo(os.path.basename(f),file_path,os.path.getsize(join(file_path,f))) for f in listdir(file_path) if (isfile(join(file_path, f)) and pathlib.Path(str(f).lower().replace('\'','')).suffix.__eq__('.txt'))]
             if len(txtFileList) > 0:
                 self.app.txtFileList = txtFileList
@@ -133,6 +142,8 @@ class Content(MDBoxLayout):
     '''Custom content.'''
 
 class CompressionGui(MDApp):
+    dialog = None
+    compressPath = None
 
     def __init__(self):
         super().__init__()
@@ -159,7 +170,9 @@ class CompressionGui(MDApp):
 
         self.exit_manager()
         if not isfile(path):
-            #self.app.root.current = 'fileInfo'
+            self.dialog.open()
+            self.compressPath = path;
+
             txtFileList = [FileInfo(os.path.basename(f),path,os.path.getsize(join(path,f)))for f in listdir(path) if (isfile(join(path, f)) and pathlib.Path(str(f).lower().replace('\'','')).suffix.__eq__('.txt'))]
             if len(txtFileList) > 0:
                 self.txtFileList = txtFileList
@@ -193,30 +206,62 @@ class CompressionGui(MDApp):
         sm.add_widget(MainScreen(name='main'))
         sm.add_widget(FileInfoScreen(name='fileInfo'))
         sm.add_widget(ImageSliderScreen(name='imageSlider'))
+        self.create_dialog()
         return sm
 
     def on_start(self):
         self.root.get_screen('main').ids.upload_card.app = self
         self.root.get_screen('fileInfo').app =self
-        resultsFileCompressed  = listdir('plots');
-        for i in resultsFileCompressed:
-            self.root.get_screen('imageSlider').ids.box.add_widget(
-                    MDExpansionPanel(
-                        content=Content(join('plots',i)),
-                        panel_cls=MDExpansionPanelOneLine(
-                            text=f"{i}",
-                        )
-                    )
-                )
 
-        pass
 
     def goToUpload(self):
         self.root.current = 'main'
         self.txtFileList: []
 
     def goToImageSlider(self):
+        q = queue.Queue()
+        threads = [threading.Thread(target=self.func, args=(i, q)) for i in range(5)]
+        for th in threads:
+            th.daemon = True
+            th.start()
+
+        result1 = q.get()
+        result2 = q.get()
+
+        print("Second result: {}".format(result2))
+
+
+        # main(self.compressPath)
+        #
+        # resultsFileCompressed = listdir('plots');
+        # for i in resultsFileCompressed:
+        #     self.root.get_screen('imageSlider').ids.box.add_widget(
+        #         MDExpansionPanel(
+        #             content=Content(join('plots', i)),
+        #             panel_cls=MDExpansionPanelOneLine(
+        #                 text=f"{i}",
+        #             )
+        #         )
+        #     )
         self.root.current = 'imageSlider'
 
+    def create_dialog(self):
+        self.dialog = MDDialog()
+        spinner = MDSpinner()
+        spinner.size_hint = (None, None)
+        spinner.size = (dp(46), dp(46))
+        spinner.pos_hint: {'center_x': .5, 'center_y': .5}
+        self.dialog.md_bg_color = (0, 0, 0, 0)
+        self.dialog.size = (10000, 10000)
+        self.dialog.size_hint = (10000, 10000)
+        self.dialog.add_widget(spinner)
+
+    def func(self,id, result_queue):
+        self.dialog.open()
+
+        print("Thread", id)
+        time.sleep(random.random() * 5)
+        result_queue.put((id, 'done'))
+        self.dialog.dismiss()
 
 CompressionGui().run()
