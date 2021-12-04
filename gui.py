@@ -239,7 +239,11 @@ class CompressionGui(MDApp):
         self.dialog.open()
 
         main(self.compressPath)
+<<<<<<< HEAD:gui.py
 
+=======
+        
+>>>>>>> 67c412e8f435580a27c021414c34b889a302d697:mainFE.py
         resultsFileCompressed = listdir('plots');
         for i in resultsFileCompressed:
             self.root.get_screen('imageSlider').ids.box.add_widget(
@@ -282,5 +286,8 @@ class CompressionGui(MDApp):
     def sleepAndDismissSpinner(self):
         self.dialog.dismiss()
 
+<<<<<<< HEAD:gui.py
 
+=======
+>>>>>>> 67c412e8f435580a27c021414c34b889a302d697:mainFE.py
 CompressionGui().run()
