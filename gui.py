@@ -251,17 +251,6 @@ class CompressionGui(MDApp):
         self.dialog.dismiss()
         self.root.current = 'imageSlider'
 
-        resultsFileCompressed = listdir('plots');
-        for i in resultsFileCompressed:
-            self.root.get_screen('imageSlider').ids.box.add_widget(
-                MDExpansionPanel(
-                    content=Content(join('plots', i)),
-                    panel_cls=MDExpansionPanelOneLine(
-                        text=f"{i}",
-                    )
-                )
-            )
-            self.root.current = 'imageSlider'
 
     def create_dialog(self):
         self.dialog = MDDialog()
