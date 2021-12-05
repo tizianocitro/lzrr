@@ -1,15 +1,12 @@
-Loading : /home/maxio96/Scrivania/lzrr/input/text2.txt
+Loading : /home/maxio96/lzrr/input/text2.txt
 constructing Suffix Array...[END]
- Constructing Dependency Array : [4/250]
- Decompressing the compressed text : [0/250]
-text check : OK!
 [36m=============RESULT===============
-File : /home/maxio96/Scrivania/lzrr/input/text2.txt
-Output : /home/maxio96/Scrivania/lzrr/output/lex/text2.txt.lex
+File : /home/maxio96/lzrr/input/text2.txt
+Output : /home/maxio96/lzrr/output/lex/text2.txt.lex
 Mode : lex
 The length of the input text : 250
 The number of factors : 73
-Memory : 4387381248
+Memory : 4050767872
 Excecution time : 2ms[125chars/ms]
 ==================================
 [39m

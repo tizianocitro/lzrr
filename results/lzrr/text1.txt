@@ -1,17 +1,14 @@
-Loading : /home/maxio96/Scrivania/lzrr/input/text1.txt
+Loading : /home/maxio96/lzrr/input/text1.txt
 constructing Suffix Array...[END]
 Initializing the dependency array manager...[END]
 compressing text.. : [0/37]
- Constructing Dependency Array : [4/37]
- Decompressing the compressed text : [0/37]
-text check : OK!
 [36m=============RESULT===============
-File : /home/maxio96/Scrivania/lzrr/input/text1.txt
-Output : /home/maxio96/Scrivania/lzrr/output/lzrr/text1.txt.lzrr
+File : /home/maxio96/lzrr/input/text1.txt
+Output : /home/maxio96/lzrr/output/lzrr/text1.txt.lzrr
 Mode : lzrr
 The length of the input text : 37
 The number of factors : 8
-Memory : 4377526272
+Memory : 4050862080
 Excecution time : 0ms[infchars/ms]
 ==================================
 [39m
