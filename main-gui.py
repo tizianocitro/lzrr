@@ -29,7 +29,7 @@ from gui.constants.costants import convert_size
 from main import main
 
 Window.size = (600, 600)
-_fixed_size = (600, 600)  # desired fix size
+_fixed_size = (600, 600)  
 
 
 def reSize(*args):
@@ -97,7 +97,6 @@ class FileInfo:
 class MD3Card(MDCard, RoundedRectangularElevationBehavior, ThemableBehavior, HoverBehavior):
     app = None
 
-    # MDCard.hovering = False
     def on_enter(self, *args):
 
         Window.bind(on_dropfile=self._on_file_drop)
@@ -153,7 +152,6 @@ class Content(MDBoxLayout):
         except NameError:
             pass
 
-    '''Custom content.'''
 
 
 class CompressionGui(MDApp):
@@ -176,13 +174,7 @@ class CompressionGui(MDApp):
         self.manager_open = True
 
     def select_path(self, path):
-        '''It will be called when you click on the file name
-        or the catalog selection button.
-
-        :type path: str;
-        :param path: path to the selected directory or file;
-        '''
-
+      
         self.exit_manager()
         if not isfile(path):
             self.dialog.open()
@@ -201,13 +193,13 @@ class CompressionGui(MDApp):
             toast("Cartella non valida")
 
     def exit_manager(self, *args):
-        '''Called when the user reaches the root of the directory tree.'''
+      
 
         self.manager_open = False
         self.file_manager.close()
 
     def events(self, instance, keyboard, keycode, text, modifiers):
-        '''Called when buttons are pressed on the mobile device.'''
+       
 
         if keyboard in (1001, 27):
             if self.manager_open:
@@ -238,7 +230,8 @@ class CompressionGui(MDApp):
     def goToImageSlider(self):
         self.dialog.open()
         print("Compress path",self.compressPath)
-        main(self.compressPath)
+        #main(self.compressPath)
+        os.system("python3 main.py")
         resultsFileCompressed = listdir('plots')
         for i in resultsFileCompressed:
             self.root.get_screen('imageSlider').ids.box.add_widget(

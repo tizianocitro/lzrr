@@ -13,7 +13,6 @@ def main(root_path=""):
     create_all_tables(stats)
     return f"{root_path}/results/"
 
-
 if __name__ == "__main__":
     cwd = os.getcwd()
     main(cwd)

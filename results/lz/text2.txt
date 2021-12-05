@@ -7,7 +7,7 @@ Output : /home/maxio96/lzrr/output/lz/text2.txt.lz
 Mode : lz
 The length of the input text : 250
 The number of factors : 81
-Memory : 4036845568
-Excecution time : 1ms[250chars/ms]
+Memory : 5481689088
+Excecution time : 0ms[infchars/ms]
 ==================================
 [39m

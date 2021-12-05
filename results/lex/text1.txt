@@ -6,7 +6,7 @@ Output : /home/maxio96/lzrr/output/lex/text1.txt.lex
 Mode : lex
 The length of the input text : 37
 The number of factors : 10
-Memory : 4037021696
+Memory : 5482291200
 Excecution time : 0ms[infchars/ms]
 ==================================
 [39m
