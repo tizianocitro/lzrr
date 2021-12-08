@@ -1,0 +1,12 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/einstein.en.txt
+constructing Suffix Array...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/einstein.en.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lex/einstein.en.txt.lex
+Mode : lex
+The length of the input text : 467626544
+The number of factors : 97442
+Memory : 17061535744
+Excecution time : 269454ms[1735.46chars/ms]
+==================================
+[39m

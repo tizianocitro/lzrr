@@ -1,0 +1,15 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/tm29.txt
+constructing Suffix Array...[END]
+Constructing LCP Array[END]
+Initializing the dependency array manager...[END]
+compressing text.. : [0/268435456]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/tm29.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lzrr/tm29.txt.lzrr
+Mode : lzrr
+The length of the input text : 268435456
+The number of factors : 31
+Memory : 15568777216
+Excecution time : 603887ms[444.513chars/ms]
+==================================
+[39m

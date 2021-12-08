@@ -1,0 +1,12 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/world_leaders.txt
+constructing Suffix Array...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/world_leaders.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lex/world_leaders.txt.lex
+Mode : lex
+The length of the input text : 46968181
+The number of factors : 179696
+Memory : 16669474816
+Excecution time : 19684ms[2386.11chars/ms]
+==================================
+[39m

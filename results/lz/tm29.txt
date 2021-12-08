@@ -1,0 +1,13 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/tm29.txt
+constructing LPFUD...[END]
+Computing factors...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/tm29.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lz/tm29.txt.lz
+Mode : lz
+The length of the input text : 268435456
+The number of factors : 56
+Memory : 17133096960
+Excecution time : 485715ms[552.66chars/ms]
+==================================
+[39m

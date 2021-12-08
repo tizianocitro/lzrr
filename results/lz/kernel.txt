@@ -1,0 +1,13 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/kernel.txt
+constructing LPFUD...[END]
+Computing factors...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/kernel.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lz/kernel.txt.lz
+Mode : lz
+The length of the input text : 257961616
+The number of factors : 793915
+Memory : 17008361472
+Excecution time : 280105ms[920.946chars/ms]
+==================================
+[39m

@@ -1,0 +1,12 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/Escherichia_Coli.txt
+constructing Suffix Array...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/Escherichia_Coli.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lex/Escherichia_Coli.txt.lex
+Mode : lex
+The length of the input text : 112689515
+The number of factors : 2014012
+Memory : 15953981440
+Excecution time : 62116ms[1814.18chars/ms]
+==================================
+[39m

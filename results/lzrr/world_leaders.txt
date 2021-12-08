@@ -1,0 +1,15 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/world_leaders.txt
+constructing Suffix Array...[END]
+Constructing LCP Array[END]
+Initializing the dependency array manager...[END]
+compressing text.. : [0/46968181]compressing text.. : [781939/46968181]compressing text.. : [1928337/46968181]compressing text.. : [4116130/46968181]compressing text.. : [6167696/46968181]compressing text.. : [7358788/46968181]compressing text.. : [8921609/46968181]compressing text.. : [9939195/46968181]compressing text.. : [14775274/46968181]compressing text.. : [21148022/46968181]compressing text.. : [26278594/46968181]compressing text.. : [31991715/46968181]compressing text.. : [37846232/46968181]compressing text.. : [43312332/46968181]compressing text.. : [46386145/46968181]compressing text.. : [46625726/46968181]compressing text.. : [46856339/46968181]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/world_leaders.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lzrr/world_leaders.txt.lzrr
+Mode : lzrr
+The length of the input text : 46968181
+The number of factors : 165628
+Memory : 14181433344
+Excecution time : 109858ms[427.535chars/ms]
+==================================
+[39m
