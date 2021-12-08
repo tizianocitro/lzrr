@@ -26,7 +26,7 @@ def create_table(stats={}, metric="number of factor"):
     df = pd.DataFrame(data)
     df.index = ["" for item in df.index]
 
-    fig, ax = plt.subplots(figsize=(10, 5))
+    fig, ax = plt.subplots(figsize=(12, 6))
     ax.xaxis.set_visible(False)
     ax.yaxis.set_visible(False)
     ax.set_frame_on(False)

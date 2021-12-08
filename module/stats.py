@@ -47,8 +47,16 @@ def get_reversed_file_lines(root_path="", method="lzrr", filename=""):
 
 
 def get_execution_time(exec_time_str=""):
+    if("e+" in exec_time_str):
+        return round (calc_execution_time(split_by_colon(exec_time_str).split("ms")[0]) / 1000)
+
     return round(int(split_by_colon(exec_time_str).split("ms")[0]) / 1000)
 
+
+def calc_execution_time(exec_time_str=""):
+	result=exec_time_str.split("e+")
+	result=float(result[0])*(10**(int(result[1])))
+	return int(result)
 
 def get_memory(memory_str=""):
     return round(int(split_by_colon(memory_str)) / 1000000)
