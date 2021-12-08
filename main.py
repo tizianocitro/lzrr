@@ -11,7 +11,7 @@ def main(root_path=""):
     stats = get_all_stats(root_path)
     plot_all(stats)
     create_all_tables(stats)
-    return f"{root_path}/results/"
+    return f"{root_path}/plots/"
 
 if __name__ == "__main__":
     cwd = os.getcwd()
