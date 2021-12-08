@@ -1,0 +1,12 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/dblp.xml.100MB.txt
+constructing Suffix Array...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/dblp.xml.100MB.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lex/dblp.xml.100MB.txt.lex
+Mode : lex
+The length of the input text : 104857600
+The number of factors : 3702841
+Memory : 17258213376
+Excecution time : 46840ms[2238.63chars/ms]
+==================================
+[39m

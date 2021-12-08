@@ -1,0 +1,15 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/Quicksort.txt
+constructing Suffix Array...[END]
+Constructing LCP Array[END]
+Initializing the dependency array manager...[END]
+compressing text.. : [0/381494534]compressing text.. : [56332371/381494534]compressing text.. : [100388033/381494534]compressing text.. : [144487175/381494534]compressing text.. : [187086481/381494534]compressing text.. : [233255151/381494534]compressing text.. : [280127162/381494534]compressing text.. : [323786491/381494534]compressing text.. : [366794045/381494534]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/Quicksort.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lzrr/Quicksort.txt.lzrr
+Mode : lzrr
+The length of the input text : 381494534
+The number of factors : 83620
+Memory : 17590857728
+Excecution time : 773659ms[493.104chars/ms]
+==================================
+[39m

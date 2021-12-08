@@ -1,0 +1,12 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/BGL.txt
+constructing Suffix Array...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/BGL.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lex/BGL.txt.lex
+Mode : lex
+The length of the input text : 104857600
+The number of factors : 2954491
+Memory : 17295388672
+Excecution time : 41097ms[2551.47chars/ms]
+==================================
+[39m

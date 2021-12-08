@@ -1,0 +1,12 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/Quicksort.txt
+constructing Suffix Array...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/Quicksort.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lex/Quicksort.txt.lex
+Mode : lex
+The length of the input text : 381494534
+The number of factors : 90594
+Memory : 16615829504
+Excecution time : 265236ms[1438.32chars/ms]
+==================================
+[39m

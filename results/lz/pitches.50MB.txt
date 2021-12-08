@@ -1,0 +1,13 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/pitches.50MB.txt
+constructing LPFUD...[END]
+Computing factors...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/pitches.50MB.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lz/pitches.50MB.txt.lz
+Mode : lz
+The length of the input text : 52428800
+The number of factors : 5782285
+Memory : 17667526656
+Excecution time : 42223ms[1241.71chars/ms]
+==================================
+[39m

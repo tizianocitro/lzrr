@@ -1,0 +1,12 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/sources.100MB.txt
+constructing Suffix Array...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/sources.100MB.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lex/sources.100MB.txt.lex
+Mode : lex
+The length of the input text : 104857600
+The number of factors : 6188857
+Memory : 16543371264
+Excecution time : 42130ms[2488.91chars/ms]
+==================================
+[39m

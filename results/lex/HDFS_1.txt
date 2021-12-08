@@ -1,0 +1,12 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/HDFS_1.txt
+constructing Suffix Array...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/HDFS_1.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lex/HDFS_1.txt.lex
+Mode : lex
+The length of the input text : 104857600
+The number of factors : 2536755
+Memory : 17335439360
+Excecution time : 48045ms[2182.49chars/ms]
+==================================
+[39m
