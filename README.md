@@ -1,7 +1,7 @@
 # LZRR
 Data Compression exam's project about LZRR (LZ77-parsing with Right Reference) at Università degli Studi di Salerno.
 
-## Start
+## Execution
 Double click on start.sh file and wait for it to complete.
 
 Then, browse to http://localhost:6901/vnc.html and click on `connect`. 
