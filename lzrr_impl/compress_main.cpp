@@ -15,10 +15,11 @@
 #include "lexparse.hpp"
 
 // Required for memory consumption
-#include <mach/mach.h>
+#include <sys/types.h>
+#include <sys/sysinfo.h>
 
 // Required for memory consumption
-struct task_basic_info t_info;
+struct sysinfo memInfo;
 
 using namespace std;
 
@@ -178,14 +179,10 @@ int main(int argc, char *argv[])
     */
 
     // Required for memory consumption
-    mach_msg_type_number_t t_info_count = TASK_BASIC_INFO_COUNT;
-
-    if (KERN_SUCCESS != task_info(mach_task_self(), TASK_BASIC_INFO, (task_info_t) &t_info, &t_info_count)) {
-        return -1;
-    }
-    int resident_size = t_info.resident_size;
-    int virtual_size = t_info.virtual_size;
-
+    sysinfo (&memInfo);
+    long long totalVirtualMem = memInfo.totalram;
+    long long resident_size = memInfo.totalram - memInfo.freeram;
+    resident_size *= memInfo.mem_unit;
     std::cout << "The length of the input text : " << text.size() << std::endl;
     double charperms = (double)text.size() / elapsed;
     std::cout << "The number of factors : " << writer.counter << std::endl;

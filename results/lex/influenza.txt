@@ -1,0 +1,12 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/influenza.txt
+constructing Suffix Array...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/influenza.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lex/influenza.txt.lex
+Mode : lex
+The length of the input text : 154808555
+The number of factors : 768623
+Memory : 15848480768
+Excecution time : 82404ms[1878.65chars/ms]
+==================================
+[39m

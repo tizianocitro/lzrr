@@ -1,0 +1,15 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/einstein.en.txt
+constructing Suffix Array...[END]
+Constructing LCP Array[END]
+Initializing the dependency array manager...[END]
+compressing text.. : [0/467626544]compressing text.. : [40589652/467626544]compressing text.. : [96427859/467626544]compressing text.. : [188157595/467626544]compressing text.. : [245088698/467626544]compressing text.. : [305367231/467626544]compressing text.. : [390441446/467626544]compressing text.. : [464303459/467626544]compressing text.. : [467604683/467626544]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/einstein.en.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lzrr/einstein.en.txt.lzrr
+Mode : lzrr
+The length of the input text : 467626544
+The number of factors : 83353
+Memory : 14200496128
+Excecution time : 913839ms[511.717chars/ms]
+==================================
+[39m

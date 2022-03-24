@@ -1,0 +1,15 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/fib41.txt
+constructing Suffix Array...[END]
+Constructing LCP Array[END]
+Initializing the dependency array manager...[END]
+compressing text.. : [0/267914296]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/fib41.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lzrr/fib41.txt.lzrr
+Mode : lzrr
+The length of the input text : 267914296
+The number of factors : 5
+Memory : 15269576704
+Excecution time : 622293ms[430.528chars/ms]
+==================================
+[39m

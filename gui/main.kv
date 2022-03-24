@@ -1,0 +1,108 @@
+#:import hex kivy.utils.get_color_from_hex
+
+
+<MainScreen>:
+    MDBoxLayout:
+        orientation: "vertical"
+        MDToolbar:
+            title: "Upload File"
+            elevation: 10
+
+        FloatLayout:
+            id:upload_card_float
+            MD3Card:
+                id: upload_card
+                orientation: "vertical"
+                padding: "8dp"
+                size_hint: .4, .4
+                elevation: 24
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+                Image:
+                    source: "gui/images/upload.png"
+                    size_hint:.5,.5
+                    pos_hint: {"center_x": .5}
+
+                MDLabel:
+                    text: "Rilascia qui la tua cartella\n\n o"
+                    halign: "center"
+
+                MDRaisedButtonHoverable:
+                    text:"Apri file manager"
+                    user_font_size: "64sp"
+                    pos_hint:{'center_x':.5,'center_y':.5}
+                    on_release:app.file_manager_open()
+
+
+<FileInfoScreen>:
+    MDBoxLayout:
+        orientation: "vertical"
+        MDToolbar:
+            title: "File da comprimere"
+            elevation: 10
+            md_bg_color: app.theme_cls.primary_color
+            left_action_items: [["arrow-left", lambda x: app.goToUpload()]]
+        MDFloatLayout:
+            pos_hint:{'top':1,'center_x':1,'center_y':1}
+            id:table_layout
+            md_bg_color: app.theme_cls.primary_color
+            MDFloatLayout:
+                md_bg_color: app.theme_cls.primary_color
+                MD3Card:
+                    padding: "10dp"
+                    elevation: 24
+
+                    Button:
+                        size_hint:(.05,.08)
+                        pos_hint:{'center_x':0.5, 'center_y':0.05}
+                        text:"Conferma"
+                        background_color: app.theme_cls.primary_color
+                        on_press:app.goToImageSlider()
+
+<ImageSliderScreen>:
+    MDBoxLayout:
+        orientation: "vertical"
+        MDToolbar:
+            id: toolbar
+            title: "Risultati"
+            elevation: 10
+            left_action_items: [["arrow-left", lambda x: app.goToUpload()]]
+
+        ScrollView:
+            MDGridLayout:
+                adaptive_height: True
+                cols:1
+                id: box
+
+
+#<MagicButton@MagicBehavior+MDIconButton>
+
+
+<MySwiper@MDSwiperItem>
+
+    RelativeLayout:
+
+        FitImage:
+            id:fitImage
+            source: "images/upload.png"
+            radius: [20,]
+
+#        MDBoxLayout:
+#            adaptive_height: True
+#            spacing: "12dp"
+#
+#            MagicButton:
+#                id: icon
+#                icon: "weather-sunny"
+#                user_font_size: "56sp"
+#                opposite_colors: True
+#
+#            MDLabel:
+#                text: "MDLabel"
+#                font_style: "H5"
+#                size_hint_y: None
+#                height: self.texture_size[1]
+#                pos_hint: {"center_y": .5}
+#                opposite_colors: True
+
+

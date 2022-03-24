@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/decompress.out.dir/decompress_main.cpp.o"
-  "CMakeFiles/decompress.out.dir/decompress_main.cpp.o.d"
   "decompress.out"
   "decompress.out.pdb"
 )

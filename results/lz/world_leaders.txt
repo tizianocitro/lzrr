@@ -1,0 +1,13 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/world_leaders.txt
+constructing LPFUD...[END]
+Computing factors...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/world_leaders.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lz/world_leaders.txt.lz
+Mode : lz
+The length of the input text : 46968181
+The number of factors : 175740
+Memory : 16857526272
+Excecution time : 40834ms[1150.22chars/ms]
+==================================
+[39m

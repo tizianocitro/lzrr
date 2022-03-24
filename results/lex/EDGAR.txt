@@ -1,0 +1,12 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/EDGAR.txt
+constructing Suffix Array...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/EDGAR.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lex/EDGAR.txt.lex
+Mode : lex
+The length of the input text : 104857600
+The number of factors : 2747012
+Memory : 17379999744
+Excecution time : 46514ms[2254.32chars/ms]
+==================================
+[39m

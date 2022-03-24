@@ -1,0 +1,12 @@
+Loading : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/tm29.txt
+constructing Suffix Array...[END]
+[36m=============RESULT===============
+File : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/input/tm29.txt
+Output : /mnt/VolumeDati3/SOA/progetto_compressione_dati/lzrr/output/lex/tm29.txt.lex
+Mode : lex
+The length of the input text : 268435456
+The number of factors : 43
+Memory : 16937771008
+Excecution time : 282136ms[951.44chars/ms]
+==================================
+[39m
